@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const jwtsecret = "mysecretkey";
+const jwtsecret = process.env.SECRET_SALT;
 /* GET users listing. */
 const db = require('../models');
 
